@@ -1,0 +1,11 @@
+﻿global using AutoMapper;
+global using MediatR;
+global using FluentValidation;
+global using Microsoft.Extensions.DependencyInjection;
+global using InsuranceSolution.Domain.Entities.Customers;
+global using InsuranceSolution.Domain.Entities.Claims;
+global using InsuranceSolution.Domain.Entities.Policies;
+global using InsuranceSolution.Domain.Entities.Insurers;
+global using InsuranceSolution.Application.Models.Email;
+global using InsuranceSolution.Application.Contracts.Persistence.Claims;
+global using Microsoft.Extensions.Logging;
