@@ -1,4 +1,5 @@
-﻿using InsuranceSolution.Application.Features.Claims.Queries.GetClaims;
+﻿using InsuranceSolution.Application.Features.Claims.Commands.DeleteClaim;
+using InsuranceSolution.Application.Features.Claims.Commands.UpdateClaim;
 
 namespace InsuranceSolution.Application.Profiles
 {
@@ -6,13 +7,22 @@ namespace InsuranceSolution.Application.Profiles
     {
         public MappingProfile() 
         {
-            CreateMap<Claim, ClaimsListVm>()
-            .ForMember(dest => dest.ClaimId, opt => opt.MapFrom(src => src.ClaimId.ToString()))
-            .ForMember(dest => dest.Policy, opt => opt.MapFrom(src => src.Policy));
+            //Claims
+            CreateMap<Claim, ClaimsListVm>().ReverseMap();
+            CreateMap<Claim, CreateClaimDTO>().ReverseMap();
+            CreateMap<Claim, CreateClaimCommand>().ReverseMap();
+            CreateMap<Claim, UpdateClaimCommand>().ReverseMap();
+            CreateMap<Claim, DeleteClaimCommand>().ReverseMap();
 
-            CreateMap<Policy, PolicyVm>();
-            CreateMap<Customer, CustomerVm>();
-            CreateMap<Insurer, InsurerVm>();
+
+            //Policies
+            //CreateMap<Policy, PolicyVm>().ReverseMap();
+
+            //Customers
+            //CreateMap<Customer, CustomerVm>().ReverseMap();
+
+            //Insurers
+            //CreateMap<Insurer, InsurerVm>().ReverseMap();
         }
     }
 }

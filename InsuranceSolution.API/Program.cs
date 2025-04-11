@@ -4,7 +4,7 @@ Log.Logger = new LoggerConfiguration()
 Log.Information("myInterlife API starting...");
 
 var builder = WebApplication.CreateBuilder(args);
-ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+//ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 builder.Host.UseSerilog(
       (context, services, configuration) => configuration

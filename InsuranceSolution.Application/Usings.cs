@@ -9,3 +9,6 @@ global using InsuranceSolution.Domain.Entities.Insurers;
 global using InsuranceSolution.Application.Models.Email;
 global using InsuranceSolution.Application.Contracts.Persistence.Claims;
 global using Microsoft.Extensions.Logging;
+global using InsuranceSolution.Application.Responses;
+global using InsuranceSolution.Application.Features.Claims.Queries.GetClaims;
+global using InsuranceSolution.Application.Features.Claims.Commands.CreateClaim;

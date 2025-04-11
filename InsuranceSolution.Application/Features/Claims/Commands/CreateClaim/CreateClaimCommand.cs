@@ -1,14 +1,14 @@
-﻿namespace InsuranceSolution.Application.Features.Claims.Queries.GetClaims
+﻿namespace InsuranceSolution.Application.Features.Claims.Commands.CreateClaim
 {
-    public class ClaimsListVm
+    public class CreateClaimCommand : IRequest<CreateClaimCommandResponse>
     {
-        public string? ClaimId { get; set; } = string.Empty;
         public DateTime? AnnouncementDate { get; set; }
         public DateTime? AccidentDate { get; set; }
         public string? ClaimStatus { get; set; } = string.Empty;
         public DateTime? CompensationDate { get; set; }
-        public Decimal CompensationAmount { get; set; } = 0;
+        public decimal CompensationAmount { get; set; }
         public string? AccidentAddress { get; set; } = string.Empty;
         public string? AccidentRegion { get; set; } = string.Empty;
+        public Guid PolicyId { get; set; }
     }
 }

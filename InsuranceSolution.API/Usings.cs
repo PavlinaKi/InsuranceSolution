@@ -21,3 +21,9 @@ global using System.Net;
 global using InsuranceSolution.Persistence;
 global using InsuranceSolution.Application;
 global using InsuranceSolution.Infrastructure;
+
+global using InsuranceSolution.Application.Contracts.Persistence.Claims;
+global using InsuranceSolution.Application.Features.Claims.Commands.CreateClaim;
+global using InsuranceSolution.Application.Features.Claims.Commands.DeleteClaim;
+global using InsuranceSolution.Application.Features.Claims.Commands.UpdateClaim;
+global using InsuranceSolution.Application.Features.Claims.Queries.GetClaims;

@@ -22,16 +22,16 @@ namespace InsuranceSolution.API
                 options.DefaultApiVersion = ApiVersion.Default;
             });
 
-            // Configure HSTS options
-            if (builder.Environment.IsProduction())
-            {
-                builder.Services.AddHsts(options =>
-                {
-                    options.Preload = true;
-                    // options.IncludeSubDomains = true;
-                    options.MaxAge = TimeSpan.FromDays(90);
-                });
-            }
+            //// Configure HSTS options
+            //if (builder.Environment.IsProduction())
+            //{
+            //    builder.Services.AddHsts(options =>
+            //    {
+            //        options.Preload = true;
+            //        // options.IncludeSubDomains = true;
+            //        options.MaxAge = TimeSpan.FromDays(90);
+            //    });
+            //}
             builder.Services.AddControllers();
 
             builder.Services.AddCors(options =>
@@ -102,10 +102,10 @@ namespace InsuranceSolution.API
             });
 
 
-            if (app.Environment.IsProduction())
-            {
-                app.UseHsts();
-            }
+            //if (app.Environment.IsProduction())
+            //{
+            //    app.UseHsts();
+            //}
 
             // app.UseHttpsRedirection();
             app.UseRouting();

@@ -149,10 +149,10 @@ namespace InsuranceSolution.Persistence
                 switch (entry.State)
                 {
                     case EntityState.Added:
-                        entry.Entity.CreatedDate =  DateTime.Now.ToUniversalTime().ToString();
+                        entry.Entity.CreatedDate = DateTime.UtcNow;
                         break;
                     case EntityState.Modified:
-                        entry.Entity.LastModifiedDate =  DateTime.Now.ToUniversalTime().ToString();
+                        entry.Entity.LastModifiedDate = DateTime.UtcNow;
                         break;
                 }
             }
