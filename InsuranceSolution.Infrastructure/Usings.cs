@@ -1,0 +1,14 @@
+﻿global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using InsuranceSolution.Infrastructure.Email;
+global using Microsoft.Extensions.Logging;
+global using System.Net.Http.Json;
+global using Polly.Extensions.Http;
+global using Polly;
+global using InsuranceSolution.Application.Contracts.Infrastructure.Authentication;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using InsuranceSolution.Application.Contracts.Infrastructure;
+global using InsuranceSolution.Infrastructure.Authentication;

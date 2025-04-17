@@ -1,0 +1,24 @@
+services:
+  insurancesolution.api:
+    # image: pvoutsidou/insurancesolution-api:v1
+    container_name: insurance-api
+    build:
+      context: .
+      dockerfile: InsuranceSolution.API/Dockerfile
+    depends_on:
+      - postgres-db
+    networks:
+      - insurance-network
+  postgres-db:
+    image: postgres
+    container_name: insurance-postgres
+    restart: always
+    networks:
+      - insurance-network
+
+volumes:
+  postgres-data:
+
+networks:
+  insurance-network:
+    driver: bridge
