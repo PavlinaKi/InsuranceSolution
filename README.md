@@ -19,13 +19,16 @@ A modular, clean architecture-based insurance management system built with .NET 
 - **.NET Core**
 - **ASP.NET Core Web API**
 - **Entity Framework Core**
-- **MediatR**
-- **AutoMapper**
-- **FluentValidation**
-- **xUnit**
-- **Docker & Docker Compose**
+- **MediatR** – for implementing CQRS pattern
+- **AutoMapper** – for object-object mapping
+- **FluentValidation** – for input validation
+- **xUnit** – for unit testing
+- **Polly** – for resilience and transient fault handling (retry policies, circuit breakers)
+- **Serilog** – for structured logging
+- **JWT Authentication** – for secure API access
+- **Docker & Docker Compose** – for containerization
 - **Microsoft SQL Server**
-- **Clean Architecture, CQRS, SOLID Principles**
+- **Clean Architecture**, **CQRS**, **SOLID Principles**
 
 ## Project Structure
 
