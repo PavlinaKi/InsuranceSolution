@@ -23,7 +23,7 @@ A modular, clean architecture-based insurance management system built with .NET 
 - **AutoMapper** – for object-object mapping
 - **FluentValidation** – for input validation
 - **xUnit** – for unit testing
-- **Polly** – for resilience and transient fault handling (retry policies, circuit breakers)
+- **Polly** – for resilience (retry policies)
 - **Serilog** – for structured logging
 - **JWT Authentication** – for secure API access
 - **Docker & Docker Compose** – for containerization
